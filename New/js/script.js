@@ -22,8 +22,8 @@ function removeUser(i){
     showClient()
 }
 
-function editBalance(B){
-    B = prompt("enter the new balance")
+function editBalance(){
+    client.balance = prompt("enter the new balance")
     showClient()
 }
 
@@ -57,7 +57,7 @@ function showClient(){
             removeUser(i)
         })
         editBtn.addEventListener('click',function(){
-             editBalance(item.balance)
+             editBalance()
         })
 
     })
